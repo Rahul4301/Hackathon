@@ -14,7 +14,7 @@ print(" ")
 
 @app.route('/')
 def index():
-    return render_template('diabetes.html',prediction= None)
+    return render_template('diabetes.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
