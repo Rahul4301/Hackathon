@@ -48,12 +48,8 @@
             </div>
         </form>
 
-        <h2 id="result" class="mt-6 text-xl font-semibold text-center">RESULTS</h2>
-
         {% if prediction is not none %}
-            <script>
-                document.getElementById('result').innerText = '{{ 'Diabetic' if prediction == 1 else 'Not Diabetic' }}';
-            </script>
+            <h2 class="mt-6 text-xl font-semibold text-center">{{ 'Diabetic' if prediction == 1 else 'Not Diabetic' }}</h2>
         {% endif %}
 
         <canvas id="diabetesChart" class="mt-6"></canvas>
