@@ -10,7 +10,6 @@ X = data.drop('Outcome', axis=1)
 y = data['Outcome']
 model = LogisticRegression(max_iter=1000)
 model.fit(X, y)
-print(" ")
 
 @app.route('/')
 def index():
