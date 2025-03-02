@@ -9,7 +9,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 # Load the dataset
-data = pd.read_csv('diabetes.csv')
+data = pd.read_csv('diabetes_extended.csv')
 
 # Define features and target
 X = data.drop('Outcome', axis=1)
